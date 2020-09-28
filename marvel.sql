@@ -278,3 +278,9 @@ INSERT INTO movies (title, year, show_time) VALUES ('Black Panther', 2018, '21:0
 --  19 | Black Panther                       | 2018 | 21:00
 --   7 | Iron Man 3                          | 2013 | 20:45
 -- (19 rows)
+
+SELECT title from movies WHERE title = 'Iron Man 2';
+
+UPDATE movies set show_time = '20:45' WHERE title = 'Iron Man 3';
+
+SELECT title from movies WHERE title LIKE 'Iron%';
